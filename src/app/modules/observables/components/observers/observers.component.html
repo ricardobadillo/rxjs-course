@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                ¿Qué son los Observers?
+            </div>
+            <p-divider></p-divider>
+            Los observers son <span class="special">consumidores</span> de los valores entregados por un Observable.
+            
+            <br> <br>
+
+            Los observers son solo objetos con tres devoluciones de llamada, una para cada tipo de 
+            notificación que un Observable puede entregar.
+        </p-card>
+        
+        <div class="code">
+            <app-code-block [code]="observer_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag">¿Cómo usarlo?</span>
+    </p-divider>
+
+    <div>
+        <p>Para usar el observer, se puede proporcionar al subscribe de un Observable. </p>
+
+        <div class="code">
+            <app-code-block [code]="observer" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag">Explicación</span>
+    </p-divider>
+
+    <div>
+        <p>En resumen: <span class="special">Hay tres posibles argumentos que se le pueden enviar a un subscribe. </span></p>
+        
+        <p class="special-p"> Primera forma: La "tradicional" 😁 </p>
+
+        <div class="code">
+            <app-code-block [code]="first_form" language="js"></app-code-block>
+        </div>
+    
+        <p class="special-p"> Segunda forma: La "explícita" 😴 </p>
+
+        <div class="code">
+            <app-code-block [code]="second_form" language="js"></app-code-block>
+        </div>
+
+        <p class="special-p"> Tercera forma: Define un observer 🤪 </p>
+
+    </div>
+</div>
+

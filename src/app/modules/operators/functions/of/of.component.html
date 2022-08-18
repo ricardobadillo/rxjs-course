@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                Of
+            </div>
+            <p-divider></p-divider>
+            Permite crear observables en base de un listado de elementos.
+        </p-card>
+        
+        <div class="code">
+            <app-code-block [code]="of_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Detalles ✍🏻 </span>
+    </p-divider>
+
+    <div>
+        <p> ❗ Es síncrono. </p>
+        
+        <p> ❗ Retorna un Observable que emite los argumentos descritos anteriormente y luego se completa. </p>
+
+        <p> ❗ Emite tantas veces como elementos tenga separados por coma. </p>
+
+        <p> 😥 Quedó deprecado en la versión 8 de RxJS. </p>
+    </div>
+</div>

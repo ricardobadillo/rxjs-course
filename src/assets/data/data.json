@@ -1,0 +1,244 @@
+{
+  "ninjas": [
+    {
+      "id": "antagonista_deidara",
+      "name": "Deidara",
+      "type": "Antagonista",
+      "village": "Iwagakure: Aldea Oculta entre las Rocas",
+      "techniques": "Katsu",
+      "phrase": "¡El arte es una explosión!"
+    },
+    {
+      "id": "antagonista_hidan",
+      "name": "Hidan",
+      "type": "Antagonista",
+      "village": "Yugakure: Aldea de las Aguas Termales",
+      "techniques": "Jujutsu: Kuji Sōketsu",
+      "phrase": "La matanza es el precepto más importante de la fe de Jashin."
+    },
+    {
+      "id": "antagonista_itachi",
+      "name": "Itachi Uchiha",
+      "type": "Antagonista",
+      "village": "Konohagakure: Aldea Oculta entre las Hojas",
+      "techniques": "Tsukuyomi",
+      "phrase": "La gente vive apoyándose en el conocimiento y la conciencia. A eso lo llaman realidad. Pero el conocimiento y la conciencia son conceptos abstractos. Por tanto, puede que esa realidad sea una ilusión. La gente vive dentro de su propia convicción."
+    },
+    {
+      "id": "antagonista_kabuto",
+      "name": "Kabuto Yakushi",
+      "type": "Antagonista",
+      "village": "Iwagakure: Aldea Oculta entre las Rocas",
+      "techniques": "Chakura no Mesu",
+      "phrase": "Mil cambios, diez mil transformaciones."
+    },
+    {
+      "id": "antagonista_kakuzu",
+      "name": "Kakuzu",
+      "type": "Antagonista",
+      "village": "Takigakure: Aldea Oculta de la Cascada",
+      "techniques": "Jiongu",
+      "phrase": "El dinero es lo primero."
+    },
+    {
+      "id": "antagonista_kimimaro",
+      "name": "Kimimaro",
+      "type": "Antagonista",
+      "village": "Kirigakure: Aldea Oculta de la Niebla",
+      "techniques": "Hessendan",
+      "phrase": "Aún sigo con vida y si es así, debe de ser por alguna razón."
+    },
+    {
+      "id": "antagonista_kisame",
+      "name": "Kisame",
+      "type": "Antagonista",
+      "village": "Kirigakure: Aldea Oculta de la Niebla",
+      "techniques": "Suiton: Dai Bukusui Shōha",
+      "phrase": "Mi nombre es Hoshigaki Kisame, un nombre que no olvidarás."
+    },
+    {
+      "id": "antagonista_konan",
+      "name": "Konan",
+      "type": "Antagonista",
+      "village": "Amegakure: Aldea Oculta entre la Lluvia",
+      "techniques": "Kami Bunshin",
+      "phrase": "Siempre fui prisionera de mis recuerdos... Ahora que mi viaje ha llegado a su fin, me pregunto si mis amigos estarán ahí, esperando por mí."
+    },
+    {
+      "id": "antagonista_madara",
+      "name": "Madara Uchiha",
+      "type": "Antagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Susanoo",
+      "phrase": "Sé realista, este mundo está lleno de cosas que no funcionan como deseas, cuanto más vives... más te das cuenta de que esta realidad, está hecha de dolor, sufrimiento y vacío..."
+    },
+    {
+      "id": "antagonista_orochimaru",
+      "name": "Orochimaru",
+      "type": "Antagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Fushi Tensei",
+      "phrase": "Tal vez no tenga sentido vivir... pero si sigues viviendo, podrás encontrar cosas muy interesantes. Así como tú has encontrado a esa flor... Así como yo te encontré a ti."
+    },
+    {
+      "id": "antagonista_pain",
+      "name": "Pain",
+      "type": "Antagonista",
+      "village": "Amegakure: Aldea Oculta entre la Lluvia",
+      "techniques": "Shinra Tensei",
+      "phrase": "Somos de la misma raza, después de todo, las razones para ir a la guerra no importan. Religión, ideologías, recursos, tierras, rencor, amor. No importa si las razones son patéticas, son suficientes para comenzar una guerra. La guerra nunca acabará, razones sobran para sostener este hecho. La naturaleza humana busca el conflicto."
+    },
+    {
+      "id": "antagonista_sasori",
+      "name": "Sasori",
+      "type": "Antagonista",
+      "village": "Sunagakure: Aldea Oculta de la Arena",
+      "techniques": "Aka Higi: Hyakki no Sōen",
+      "phrase": "El alma del creador siempre se mantiene dentro de sus creaciones."
+    },
+    {
+      "id": "antagonista_tobi",
+      "name": "Tobi",
+      "type": "Antagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Kamui",
+      "phrase": "En un mundo ninja, aquellos que rompen las reglas son escoria. Pero aquellos que abandonan a sus amigos, son peor que escoria."
+    },
+    {
+      "id": "protagonista_gaara",
+      "name": "Gaara",
+      "type": "Protagonista",
+      "village": "Sunagakure: Aldea Oculta de la Arena",
+      "techniques": "Sabaku Sōsō",
+      "phrase": "Hemos caminado a través de la oscuridad de este mundo, es por eso que somos capaces de ver incluso una partícula de luz."
+    },
+    {
+      "id": "protagonista_gai",
+      "name": "Maito Gai",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Asa Kujaku",
+      "phrase": "¡He aquí el poder de la juventud!"
+    },
+    {
+      "id": "protagonista_jiraiya",
+      "name": "Jiraiya",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Nimpou Regeken",
+      "phrase": "Cuando eres herido aprendes a odiar, por otro lado cuando hieres, te resientes, pero también empiezas a sentirte culpable."
+    },
+    {
+      "id": "protagonista_kakashi",
+      "name": "Kakashi Hatake",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Chidori",
+      "phrase": "Saber que es lo correcto e ignorarlo es actuar como un cobarde."
+    },
+    {
+      "id": "protagonista_naruto",
+      "name": "Naruto Uzumaki",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Fūton: Rasen Shuriken",
+      "phrase": "Yo jamás me rindo, y jamás retrocederé a mi palabra. Ese es mi camino ninja."
+    },
+    {
+      "id": "protagonista_sakura",
+      "name": "Sakura Haruno",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Isshi Resshin",
+      "phrase": "¿No lo sabías? ¡Las mujeres tienen que ser fuertes para sobrevivir!"
+    },
+    {
+      "id": "protagonista_sasuke",
+      "name": "Sasuke Uchiha",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Enton: Kagutsuchi",
+      "phrase": "Cerré los ojos hace mucho tiempo. Mis metas sólo existen en la oscuridad."
+    },
+    {
+      "id": "protagonista_tsunade",
+      "name": "Tsunade Senju",
+      "type": "Protagonista",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Byakugō no Jutsu",
+      "phrase": "Todas las cosas que tienen forma eventualmente decaen... Sólo los sentimientos permanecen para siempre."
+    },
+    {
+      "id": "secundario_ino",
+      "name": "Ino Yamanaka",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Shintenshin no Jutsu",
+      "phrase": "No es cuestión de si puedo o no puedo. ¡Lo estoy haciendo!"
+    },
+    {
+      "id": "secundario_kiba",
+      "name": "Kiba Inuzuka",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Juujin Bunshin",
+      "phrase": "Eh, no sé lo que está pasando, pero yo voy siempre para adelante."
+    },
+    {
+      "id": "secundario_kushina",
+      "name": "Kushina Uzumaki",
+      "type": "Secundario",
+      "village": "Uzushiogakure: Aldea Oculta del Remolino",
+      "techniques": "Fūinjutsu",
+      "phrase": "¡Yo voy a ser la primera mujer Hokage!"
+    },
+    {
+      "id": "secundario_minato",
+      "name": "Minato Namikaze",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Rasengan",
+      "phrase": "¡Quiero que todos en el pueblo me reconozcan y convertirme en un gran Hokage!"
+    },
+    {
+      "id": "secundario_neji",
+      "name": "Neji Hyūga",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Jūken",
+      "phrase": "Todas las personas nacemos destinadas a algo, pero todos compartimos un mismo destino: la muerte..."
+    },
+    {
+      "id": "secundario_rocklee",
+      "name": "Rock Lee",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Omote Renge",
+      "phrase": "Si crees en tus sueños, te demostraré que los puedes lograr trabajando duro."
+    },
+    {
+      "id": "secundario_shikamaru",
+      "name": "Shikamaru Nara",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Ninpo: Kage Mane no Jutsu",
+      "phrase": "Quisiera ser libre, como las nubes que vagan por el cielo sin ninguna preocupación."
+    },
+    {
+      "id": "secundario_shisui",
+      "name": "Shisui Uchiha",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Kotoamatsukami",
+      "phrase": "Está bien tener objetivos pero aferrarse a ellos con demasiada fuerza puede desviarnos del camino."
+    },
+    {
+      "id": "secundario_tobirama",
+      "name": "Tobirama Senju",
+      "type": "Secundario",
+      "village": "Konohagakure: Aldea Oculta Entre las Hojas",
+      "techniques": "Hiraishin no Jutsu",
+      "phrase": "Saru... Protege a aquellos que aman a la aldea y a aquellos que creen en ti... Y cuida de aquellos a quienes les puedes confiar la próxima generación. ¡A partir de mañana, tú serás el Hokage!"
+    }
+  ]
+}

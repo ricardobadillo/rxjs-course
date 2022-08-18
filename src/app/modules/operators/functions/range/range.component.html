@@ -1,0 +1,60 @@
+
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                range
+            </div>
+            <p-divider></p-divider>
+            Crea un Observable que emite una secuencia de números dentro de un rango específico.
+        </p-card>
+        
+        <div class="code">
+            <app-code-block [code]="range_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Parámetros 🎯 </span>
+    </p-divider>
+
+    <div class="container-table">
+        <p-table [value]="parameters" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th> Argumento </th>
+                    <th> Tipo </th>
+                    <th> Descripción </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-parameter>
+                <tr>
+                    <td> {{ parameter.argument }} </td>
+                    <td> {{ parameter.type }} </td>
+                    <td> {{ parameter.description }} </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Detalles ✍🏻 </span>
+    </p-divider>
+
+    <div>
+        <p> ❗ Es síncrono. </p>
+        
+        <p> ❗ Un observable de números que emite un rango finito de enteros secuenciales. </p>
+        
+        <p> 
+            ❗ El operador de rango emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud.
+            <br>
+            De manera predeterminada, no usa <span class="special">SchedulerLike</span> y solo entrega las notificaciones de forma sincrónica.
+            <br> 
+            Puede usar un SchedulerLike opcional para regular esas entregas. 
+        </p>
+    </div>
+</div>

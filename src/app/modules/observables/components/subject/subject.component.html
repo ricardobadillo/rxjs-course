@@ -1,0 +1,72 @@
+
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                ¿Qué son los Subject?
+            </div>
+            <p-divider></p-divider>
+            Es un tipo especial de Observable que permite la multidifusión de valores a muchos observers.
+            Mientras que los Observables simples son de unifusión, es decir, cada observer suscrito
+            posee una ejecución independiente del Observable, los Subject son de multidifusión.
+
+            <br> <br>
+
+            Un subject es como un Observable, <span class="special">pero puede multitransmitir a muchos observers.</span>
+        </p-card>
+        
+        <div class="code">
+            <app-code-block [code]="subject_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special">Hablemos de sus características 🤓</span>
+    </p-divider>
+
+    <div>
+        <p> 
+            ❗ Casteo múltiple: Muchas subscripciones están sujetas a este mismo Subject.
+            
+            <br>
+            
+            Va a servir para distribuir la misma información a todos los 
+            lugares que estén suscritos. 
+        </p>
+
+        <p>
+            ❗ También es un observer.
+        </p>
+
+        <p>
+            ❗ También se le puede manejar el next, error y complete.
+        </p>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special">Suscripciones aninadas 🤔</span>
+    </p-divider>
+
+    <div class="code-full">
+        <app-code-block [code]="double_subscriber" language="js"></app-code-block>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special">Algo más... 😒</span>
+    </p-divider>
+
+    <div>
+        <p> 
+            ❗ Cuando la data es producida por el observable en sí misma, 
+            es considerado un <span class="special">Cold Observable.</span>
+        </p>
+
+        <p>
+            ❗ Cuando la data es producida fuera del observable es llamado
+            <span class="special">Hot Observable.</span>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<p-menubar [model]="title" [style]="{'border-radius': '0'}">
+    RxJS Course App
+</p-menubar>
+
+<div class="container">
+    <p-panelMenu *ngIf="showMenu" [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
+    <router-outlet></router-outlet>
+</div>
+

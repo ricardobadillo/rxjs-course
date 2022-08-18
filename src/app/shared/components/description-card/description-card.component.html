@@ -1,0 +1,17 @@
+<p-card [style]="cardStyle">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="{{dataCard.imageURL}}" [style]="imageCardStyle">
+    </ng-template>
+    <div class="title">
+        {{ dataCard.title }}
+    </div>
+    <p-divider></p-divider>
+    <p> 
+        {{ dataCard.text }}
+        
+        <span class="special">
+            <br> <br>
+            {{ dataCard.resume }} 
+        </span>
+    </p>
+</p-card>

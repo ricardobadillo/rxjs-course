@@ -1,0 +1,61 @@
+@import "prismjs/themes/prism-twilight.css";
+
+// Menú bar.
+.menubar {
+    &.p-menubar {
+        color: #ffffff;
+    }
+}
+
+// Legend.
+.definition-container.p-fieldset {
+
+    .p-fieldset-legend {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+// Card.
+.card-container {
+    .p-card-header {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+}
+
+// Divider.
+.divider.p-divider-left {
+
+    .p-divider-content {
+        background-color: #121212;
+    }
+
+    .p-button {
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        color: #ffffff;
+    }
+
+    .p-button:hover {
+        background-color: var(--secondary);
+        border: 1px solid var(--secondary);
+        color: #ffffff;
+    }
+}
+
+:root {
+    --primary: #e8078f;
+    --secondary: #6c278c;
+}
+
+.special {
+    color: var(--primary);
+    font-weight: 600;
+}

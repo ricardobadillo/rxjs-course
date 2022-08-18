@@ -1,0 +1,67 @@
+
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                ¿Qué es una Subscription?
+            </div>
+            <p-divider></p-divider>
+            Una suscripción es un objeto que representa un recurso desechable, normalmente
+            la ejecución de un Observable. Es importante saber que <span class="special">cuando uno se suscribe,
+            se crea una instancia del observable.</span>
+
+            <br> <br>
+
+            Una suscripción tiene un método llamado <span class="special">unsubscribe</span>, que
+            no acepta argumentos y simplemente libera recursos y cancela ejecuciones observables.
+        </p-card>
+        
+        <div class="code">
+            <app-code-block [code]="subscriber_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special">Importante ⚠</span>
+    </p-divider>
+
+    <div>
+        <p> ❗ Complete no es lo mismo que Unsubscribe. </p>
+
+        <p>
+            ❗ Luego de ejecutar el complete se ejecuta la función
+            del return del Observable.
+        </p>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special">Suscripciones aninadas 🤔</span>
+    </p-divider>
+
+    <div class="code-full">
+        <app-code-block [code]="double_subscriber" language="js"></app-code-block>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special">Algo más de información 😎</span>
+    </p-divider>
+
+    <p-card [style]="cardStyle">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+        </ng-template>
+        <div class="title">
+            ¿Qué son los subscribers?
+        </div>
+        <p-divider></p-divider>
+        <ul>
+            <li> Se subscriben a un observable, es decir, están pendiente de lo que realiza el observable. </li>
+            <li> Consumen u observan la data del observable. </li>
+            <li> Pueden recibir los errores y eventos del observable. </li>
+            <li> Desconocen todo lo que se enceuntra detrás del observable. </li>
+        </ul>
+    </p-card>
+</div>

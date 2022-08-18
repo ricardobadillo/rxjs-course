@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                fromEvent
+            </div>
+            <p-divider></p-divider>
+            Permite crear observables en base a un event target.
+        </p-card>
+        
+        <div class="code">
+            <app-code-block [code]="fromEvent_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Parámetros 🎯 </span>
+    </p-divider>
+
+    <div class="container-table">
+        <p-table [value]="parameters" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th> Argumento </th>
+                    <th> Tipo </th>
+                    <th> Descripción </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-parameter>
+                <tr>
+                    <td> {{ parameter.argument }} </td>
+                    <td> {{ parameter.type }} </td>
+                    <td> {{ parameter.description }} </td>
+                </tr>
+            </ng-template>
+        </p-table>
+        
+    </div>
+</div>

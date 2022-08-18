@@ -1,0 +1,48 @@
+
+<div class="container">
+    <div class="card-container">
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
+            </ng-template>
+            <div class="title">
+                ¿Qué son los observables?
+            </div>
+            <p-divider></p-divider>
+            <ul>
+                <li> Son la fuente de información. </li>
+                <li> Pueden emitir múltiples valores, solo uno o ninguno. </li>
+                <li> Pueden emitir errores. </li>
+                <li> Pueden ser finitos o infinitos. </li>
+                <li> Pueden ser síncronos o asíncronos. </li>
+            </ul>
+        </p-card>
+
+        <p-card [style]="cardStyle">
+            <ng-template pTemplate="header">
+                Información sobre los observables
+            </ng-template>
+            Los observables son básicamente un objeto que puede emitir valores. 
+
+            <br> <br>
+            
+            Es importante saber que para que un observable se ejecute 
+            debe tener una <span class="special">subscripción. 👀</span>
+            
+            <br> <br>
+
+            En el siguiente ejemplo se utiliza el método <span class="special">next</span>
+            el cual permite emitir valores a sus subscriptores y el método <span class="special">complete</span>
+            indica que el observable no va a emitir más valores. 
+        </p-card>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag">Código</span>
+    </p-divider>
+
+    <div class="code">
+        <app-code-block [code]="js_code" language="js"></app-code-block>
+    </div>
+</div>
+
