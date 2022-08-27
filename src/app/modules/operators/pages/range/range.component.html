@@ -44,17 +44,5 @@
         <span class="p-tag-special"> Detalles ✍🏻 </span>
     </p-divider>
 
-    <div>
-        <p> ❗ Es síncrono. </p>
-        
-        <p> ❗ Un observable de números que emite un rango finito de enteros secuenciales. </p>
-        
-        <p> 
-            ❗ El operador de rango emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud.
-            <br>
-            De manera predeterminada, no usa <span class="special">SchedulerLike</span> y solo entrega las notificaciones de forma sincrónica.
-            <br> 
-            Puede usar un SchedulerLike opcional para regular esas entregas. 
-        </p>
-    </div>
+    <app-list [listContent]="listContent" ></app-list>
 </div>

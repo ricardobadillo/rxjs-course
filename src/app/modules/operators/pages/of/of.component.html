@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="card-container">
+        <app-description-card [dataCard]="dataCard"></app-description-card>
+                
+        <div class="code">
+            <app-code-block [code]="of_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Detalles ✍🏻 </span>
+    </p-divider>
+
+    <app-list [listContent]="listContent"></app-list>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Primer acercamiento al Async Scheduler 🤔 </span>
+    </p-divider>
+
+    <div class="code">
+        <app-code-block [code]="async_scheduler_code" language="js"></app-code-block>
+    </div>
+    
+</div>

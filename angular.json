@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rxjs-app": {
+    "documentation-rxjs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": ["prismjs"],
-            "outputPath": "dist/rxjs-app",
+            "outputPath": "dist/documentation-rxjs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "rxjs-app:build:production"
+              "browserTarget": "documentation-rxjs:build:production"
             },
             "development": {
-              "browserTarget": "rxjs-app:build:development"
+              "browserTarget": "documentation-rxjs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rxjs-app:build"
+            "browserTarget": "documentation-rxjs:build"
           }
         },
         "test": {

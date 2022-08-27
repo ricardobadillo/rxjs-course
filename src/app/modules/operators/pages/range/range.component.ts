@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class RangeComponent {
 
+  listContent: string[] = [
+    '❗ Es síncrono.',
+    '❗ Un observable de números que emite un rango finito de enteros secuenciales.',
+    '❗ El operador de rango emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud.',
+    `❗ El operador de rango emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud. 
+    De manera predeterminada, no usa <span class="special">SchedulerLike</span> y solo entrega las notificaciones de forma sincrónica.
+    Puede usar un SchedulerLike opcional para regular esas entregas.`,
+    '👀 Por defecto tiene como valor inicial el 0.',
+    '❗ Se puede transformar de manera asíncrona con un Async Scheduler.',
+  ]
+
   cardStyle = {
     'margin-bottom': '1rem',
     'padding-top': '2rem',

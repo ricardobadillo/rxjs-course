@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: justify;
+  width: 100%;
+}
+.card-container .p-card {
+  margin-bottom: 1rem;
+}
+
+.code {
+  margin: 0rem 2rem;
+  width: 800px;
+}
+
+.p-tag {
+  background-color: var(--primary);
+  color: #ffffff;
+}/*# sourceMappingURL=observables.component.css.map */

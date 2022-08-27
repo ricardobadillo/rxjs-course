@@ -1,32 +1,12 @@
 <div class="container">
-    <div style="display: flex; flex-direction: column;">
-        <p-fieldset legend="¿Qué es la programación reactiva?" [toggleable]="true" class="definition-container" styleClass="definition-container">
-            <p class="definition-container-content">
-                La programación reactiva es un paradigma de programación asincrónico interesado en 
-                <span class="special">los flujos de datos</span> y <span class="special">la propagación al cambio</span>.
-                Es decir, <span class="special" style="font-style: italic;">reaccionar</span> a los datos ejecutando una serie de eventos.
-            </p>
-        </p-fieldset>
-
-        <p-fieldset legend="Más sobre la programación reactiva" [toggleable]="true" class="definition-container" styleClass="definition-container">
-            <p class="definition-container-content">
-                La programación reactiva está relacionada con el <span class="special">patrón de diseño Observer</span>: cuando hay
-                un cambio de estado en un objeto, los otros objetos son notificados y actualizados acorde. 
-            </p>
-        </p-fieldset>
+    <div class="content-fieldset">
+        <ng-container *ngFor="let item of reactiveNotesData">
+            <app-fieldset [fieldSetData]="item"></app-fieldset>
+        </ng-container>
     </div>
 
     <div class="container">
-        <p-card styleClass="card-content">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="assets/images/rxjs-operators.jpg" [style]="imageStyle">
-            </ng-template>
-            <p-divider></p-divider>
-            <p>
-                RxJS <span class="special">("Reactive Extensions for JavaScript")</span> es una librería para programación 
-                reactiva usando observables que hacen más fácil la creación de código asíncrono o basado en callbacks.
-            </p>
-        </p-card>
+        <app-card [cardData]="cardData"></app-card>
     </div>
 </div>
 
@@ -35,23 +15,13 @@
 </p-divider>
 
 <div class="container" *ngIf="showRxJS">
-    <p-fieldset legend="¿Qué es RxJS?" [toggleable]="true" class="definition-container" styleClass="definition-container">
-        <p class="definition-container-content">
-            RxJS es una biblioteca para componer programas asíncronos y basados en eventos mediante el uso de secuencias observables. 
-            Proporciona un tipo de núcleo: los <span class="special">Observables</span>, de tipos de satélites <span class="special">(Observer, Schedulers, Subjects)</span> 
-            y <span class="special">operadores</span> inspirados en los métodos nativos de los arreglos (map, filter, reduce, every, entre otros) 
-            para permitir el manejo de eventos asíncronos como colecciones.
-        </p>
-    </p-fieldset>
-
-    <p-fieldset legend="Resumen" [toggleable]="true" class="definition-container" styleClass="definition-container">
-        <p class="definition-container-content">
-            <span class="special">ReactiveX</span> combina <span class="special">el patrón Observer</span> con <span class="special">el patrón Iterator</span> 
-            y <span class="special">la programación funcional</span> con colecciones para satisfacer la necesidad de una forma ideal de gestionar secuencias de eventos.
-        </p>
-    </p-fieldset>
+    <ng-container *ngFor="let item of rxjsData; let i = index;">
+        <app-fieldset 
+            [fieldSetData]="item" 
+            [ngStyle]="{'margin-left': i === 1 ? '2rem' : null }">
+        </app-fieldset>
+    </ng-container>
 </div>
-
 
 <p-divider align="left" styleClass="divider">
     <p-button label="¿Qué significa todo eso?" icon="pi pi-code" (onClick)="toggleContentRxJS()"></p-button>

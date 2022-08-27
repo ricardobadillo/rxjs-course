@@ -1,0 +1,9 @@
+<p-card styleClass="card-content">
+    <ng-template pTemplate="header">
+        <img alt="Card" [src]="cardData.urlImage" [style]="cardData.styleImage">
+    </ng-template>
+
+    <p-divider></p-divider>
+    
+    <p [innerHtml]="cardData.content"></p>
+</p-card>

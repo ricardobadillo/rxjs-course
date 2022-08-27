@@ -1,0 +1,14 @@
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+li {
+  font-size: 1rem;
+}
+
+div, p {
+  text-align: justify;
+}/*# sourceMappingURL=description-card.component.css.map */

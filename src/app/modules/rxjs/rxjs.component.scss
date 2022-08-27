@@ -2,24 +2,13 @@
     display: flex;
     margin: 3rem;
     justify-content: space-around;
+}
 
-    .definition-container {
-        flex-basis: 45%;
+.content-fieldset {
+    display: flex; 
+    flex-direction: column;
+    
+    > * {
+        margin-bottom: 1rem;
     }
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-li {
-    font-size: 1.1rem;
-}
-
-.code {
-    margin: 0rem 2rem;
-    width: 800px;
 }

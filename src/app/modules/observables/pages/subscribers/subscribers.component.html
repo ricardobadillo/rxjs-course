@@ -1,23 +1,7 @@
 
 <div class="container">
     <div class="card-container">
-        <p-card [style]="cardStyle">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
-            </ng-template>
-            <div class="title">
-                ¿Qué es una Subscription?
-            </div>
-            <p-divider></p-divider>
-            Una suscripción es un objeto que representa un recurso desechable, normalmente
-            la ejecución de un Observable. Es importante saber que <span class="special">cuando uno se suscribe,
-            se crea una instancia del observable.</span>
-
-            <br> <br>
-
-            Una suscripción tiene un método llamado <span class="special">unsubscribe</span>, que
-            no acepta argumentos y simplemente libera recursos y cancela ejecuciones observables.
-        </p-card>
+        <app-description-card [dataCard]="dataCard"></app-description-card>
         
         <div class="code">
             <app-code-block [code]="subscriber_code" language="js"></app-code-block>
@@ -25,7 +9,7 @@
     </div>
 
     <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special">Importante ⚠</span>
+        <span class="p-tag-special"> Importante ⚠ </span>
     </p-divider>
 
     <div>
@@ -46,7 +30,7 @@
     </div>
 
     <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special">Algo más de información 😎</span>
+        <span class="p-tag-special"> En resumen 😎 </span>
     </p-divider>
 
     <p-card [style]="cardStyle">

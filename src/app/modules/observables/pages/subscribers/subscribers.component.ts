@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DescriptionCard } from 'src/app/core/models/description-card';
 
 @Component({
   selector: 'app-subscribers',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./subscribers.component.scss']
 })
 export class SubscribersComponent {
+
+  dataCard: DescriptionCard = {
+    imageURL: 'assets/images/rxjs.png',
+    isList: false,
+    resume: 'Una suscripción tiene un método llamado unsubscribe, que no acepta argumentos y simplemente libera recursos y cancela ejecuciones observables.',
+    text: 'Una suscripción es un objeto que representa un recurso desechable, normalmente la ejecución de un Observable. Es importante saber que cuando uno se suscribe, se crea una instancia del observable.',
+    title: '¿Qué es una Subscription?'
+  };
 
   cardStyle = {
     'margin-bottom': '1rem',
@@ -52,6 +61,7 @@ export class SubscribersComponent {
 
   double_subscriber: string = `
     import { interval } from 'rxjs';
+import { DescriptionCard } from '../../../../core/models/description-card';
   
     const observable = interval(100);
     const other_observable = interval(200);

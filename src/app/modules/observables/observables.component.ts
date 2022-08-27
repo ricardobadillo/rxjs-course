@@ -1,4 +1,10 @@
+// Angular.
 import { Component } from '@angular/core';
+
+// Modelos.
+import { DescriptionCard } from 'src/app/core/models/description-card';
+
+
 
 @Component({
   selector: 'app-observables',
@@ -6,6 +12,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./observables.component.scss']
 })
 export class ObservablesComponent {
+
+  dataCard: DescriptionCard = {
+    imageURL: 'assets/images/rxjs.png',
+    isList: true,
+    listContent: [
+      'Son la fuente de información.',
+      'Pueden emitir múltiples valores, solo uno o ninguno.',
+      'Pueden emitir errores.',
+      'Pueden ser finitos o infinitos.',
+      'Pueden ser síncronos o asíncronos.'
+    ],
+    title: '¿Qué son los observables?'
+  };
 
   cardStyle = {
     'margin-bottom': '1rem',
@@ -27,6 +46,7 @@ export class ObservablesComponent {
 
   js_code: string = `
   import { Observable } from 'rxjs';
+  import { DescriptionCard } from '../../core/models/description-card';
 
   // Esto es un observable que emite valores de tipo string.
   const observable = new Observable<string>(subscriber => {

@@ -4,9 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Componentes.
 import { ObservablesComponent } from './observables.component';
-import { ObserversComponent } from './components/observers/observers.component';
-import { SubscribersComponent } from './components/subscribers/subscribers.component';
-import { SubjectComponent } from './components/subject/subject.component';
+import { ObserversComponent } from './pages/observers/observers.component';
+import { SubscribersComponent } from './pages/subscribers/subscribers.component';
+import { SubjectComponent } from './pages/subject/subject.component';
 
 
 const routes: Routes = [

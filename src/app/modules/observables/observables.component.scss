@@ -8,22 +8,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: justify;
     width: 100%;
 
     .p-card {
         margin-bottom: 1rem;
     }
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-li {
-    font-size: 1.1rem;
 }
 
 .code {

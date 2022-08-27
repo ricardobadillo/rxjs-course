@@ -39,7 +39,7 @@ export class AppComponent {
         routerLink: 'observables',
         items: [
           {
-            label: 'Funciones',
+            label: 'Tópicos',
             icon: 'pi pi-plus',
             items: [
               {
@@ -63,7 +63,7 @@ export class AppComponent {
             ],
           },
           {
-            label: 'Tópicos',
+            label: 'Funciones',
             icon: 'pi pi-plus',
             items: [
               {

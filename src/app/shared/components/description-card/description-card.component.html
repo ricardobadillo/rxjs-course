@@ -5,13 +5,25 @@
     <div class="title">
         {{ dataCard.title }}
     </div>
+    
     <p-divider></p-divider>
-    <p> 
-        {{ dataCard.text }}
-        
-        <span class="special">
-            <br> <br>
-            {{ dataCard.resume }} 
-        </span>
-    </p>
+
+    <ng-container [ngSwitch]="dataCard.isList">
+        <ng-container *ngSwitchCase="true">
+            <ul>
+                <li *ngFor="let item of dataCard.listContent"> {{ item }} </li>
+            </ul>
+        </ng-container>
+
+        <ng-container *ngSwitchCase="false">
+            <p> 
+                {{ dataCard.text }}
+                
+                <span class="special" *ngIf="dataCard.resume">
+                    <br> <br>
+                    {{ dataCard.resume }} 
+                </span>
+            </p>
+        </ng-container>
+    </ng-container>
 </p-card>

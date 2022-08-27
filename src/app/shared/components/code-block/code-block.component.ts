@@ -1,5 +1,10 @@
+// Angular.
 import { AfterViewInit, Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/core';
+
+// Prism.js.
 import * as Prism from 'prismjs';
+
+
 
 @Component({
   selector: 'app-code-block',
