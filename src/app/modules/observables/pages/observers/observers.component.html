@@ -1,20 +1,6 @@
 <div class="container">
     <div class="card-container">
-        <p-card [style]="cardStyle">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
-            </ng-template>
-            <div class="title">
-                ¿Qué son los Observers?
-            </div>
-            <p-divider></p-divider>
-            Los observers son <span class="special">consumidores</span> de los valores entregados por un Observable.
-            
-            <br> <br>
-
-            Los observers son solo objetos con tres devoluciones de llamada, una para cada tipo de 
-            notificación que un Observable puede entregar.
-        </p-card>
+        <app-description-card [dataCard]="dataCard"></app-description-card>
         
         <div class="code">
             <app-code-block [code]="observer_code" language="js"></app-code-block>
@@ -53,7 +39,6 @@
         </div>
 
         <p class="special-p"> Tercera forma: Define un observer 🤪 </p>
-
     </div>
 </div>
 

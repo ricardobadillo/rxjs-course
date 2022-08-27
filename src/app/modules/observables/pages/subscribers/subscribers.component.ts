@@ -1,5 +1,10 @@
+// Angular.
 import { Component } from '@angular/core';
+
+// Modelos.
 import { DescriptionCard } from 'src/app/core/models/description-card';
+
+
 
 @Component({
   selector: 'app-subscribers',
@@ -8,11 +13,34 @@ import { DescriptionCard } from 'src/app/core/models/description-card';
 })
 export class SubscribersComponent {
 
+  cardData: DescriptionCard = {
+    imageURL: 'assets/images/rxjs.png',
+    imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
+    isList: true,
+    listContent: [
+      'Se subscriben a un observable, es decir, están pendiente de lo que realiza el observable.',
+      'Consumen u observan la data del observable.',
+      'Pueden recibir los errores y eventos del observable.',
+      'Desconocen todo lo que se enceuntra detrás del observable.'
+    ],
+    styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '400px' },
+    showDivider: true,
+    title: '¿Qué son los subscribers?'
+  }
+
   dataCard: DescriptionCard = {
     imageURL: 'assets/images/rxjs.png',
+    imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
     isList: false,
     resume: 'Una suscripción tiene un método llamado unsubscribe, que no acepta argumentos y simplemente libera recursos y cancela ejecuciones observables.',
-    text: 'Una suscripción es un objeto que representa un recurso desechable, normalmente la ejecución de un Observable. Es importante saber que cuando uno se suscribe, se crea una instancia del observable.',
+    showDivider: true,
+    styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '400px' },
+    text: `
+      Una suscripción es un objeto que representa un recurso desechable, normalmente la ejecución de un Observable. 
+      <br> <br>
+
+      Es importante saber que cuando uno se suscribe, <span class="special">se crea una instancia del observable.</span>
+    `,
     title: '¿Qué es una Subscription?'
   };
 
@@ -20,11 +48,6 @@ export class SubscribersComponent {
     'margin-bottom': '1rem',
     'padding-top': '2rem',
     'width': '400px'
-  };
-
-  headerStyle = {
-    'font-size': '1.25rem',
-    'text-align': 'center'
   };
 
   imageStyle = {

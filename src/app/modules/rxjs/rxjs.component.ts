@@ -17,7 +17,8 @@ export class RxjsComponent {
 
   cardData: Card = {
     content: 'RxJS <span class="special">("Reactive Extensions for JavaScript")</span> es una librería para programación  reactiva usando observables que hacen más fácil la creación de código asíncrono o basado en callbacks.',
-    styleClass: 'card-content',
+    hasImage: true,
+    styleCard: 'card-content',
     styleImage: { 'width': '100%' },
     urlImage: 'assets/images/rxjs-operators.jpg'
   };
@@ -54,31 +55,37 @@ export class RxjsComponent {
   
   descriptionCards: DescriptionCard[] = [
     { 
-      title: '¿Qué es el patrón Observer?',
       imageURL: 'assets/images/rxjs.png',
+      imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
       isList: false,
+      resume: 'En resumen: notifica cuando suceden cambios.',
+      showDivider: true,
+      styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '350px' },
       text: 'Es un patrón de diseño de software que define una dependencia del tipo uno a muchos entre objetos, de manera que cuando uno de los objetos cambia su estado, notifica este cambio a todos los dependientes.',
-      resume: 'En resumen: notifica cuando suceden cambios.'
+      title: '¿Qué es el patrón Observer?',
     },
     { 
-      title: '¿Qué es el patrón Iterador?',
       imageURL: 'assets/images/rxjs.png',
+      imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
       isList: false,
+      resume: 'En resumen: todas las operaciones necesarias para poder ejecutar tareas de manera secuencial.',
+      showDivider: true,
+      styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '350px' },
       text: 'En la POO, el patrón iterador define una interfaz que declara los métodos necesarios para acceder secuencialmente a un grupo de objetos de una colección.',
-      resume: 'En resumen: todas las operaciones necesarias para poder ejecutar tareas de manera secuencial.'
+      title: '¿Qué es el patrón Iterador?',
     },
     { 
-      title: '¿Qué es la Programación funcional?',
       imageURL: 'assets/images/rxjs.png',
+      imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
       isList: false,
+      resume: 'En resumen: Tener funciones con tareas específicas que reciban argumentos y no muten la información.',
+      showDivider: true,
+      styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '350px' },
       text: 'Es crear un conjunto de funciones que tengan un objetivo específico. Sin efectos secundarios, sin mutar la data.',
-      resume: 'En resumen: Tener funciones con tareas específicas que reciban argumentos y no muten la información.'
+      title: '¿Qué es la Programación funcional?',
     },
   ];
 
-  cardStyle = { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '350px' };
-  imageCardStyle = { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' };
-  
   showContentRxJS: boolean = false;
   showRxJS: boolean = false;
 

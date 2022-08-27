@@ -28,7 +28,7 @@
 </p-divider>
 
 <div class="container" *ngIf="showContentRxJS" style="flex-wrap: wrap;">
-    <ng-container [style]="cardStyle" *ngFor="let card of descriptionCards">
+    <ng-container *ngFor="let card of descriptionCards">
         <app-description-card [dataCard]="card"></app-description-card>
     </ng-container>
 </div>

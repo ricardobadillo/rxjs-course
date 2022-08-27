@@ -24,11 +24,6 @@ export class RangeComponent {
     'width': '400px'
   };
 
-  headerStyle = {
-    'font-size': '1.25rem',
-    'text-align': 'center'
-  };
-
   imageStyle = {
     'display': 'flex',
     'height': '100px',
@@ -58,4 +53,25 @@ export class RangeComponent {
     // 3
     // Completado
   `
+
+  async_scheduler_code = `
+  import { range, asyncScheduler } from 'rxjs';
+import { DescriptionCard } from '../../../../core/models/description-card';
+
+  const source$ = range(1, 5, asyncScheduler);
+
+  console.log('Inicio');
+  source$.subscribe(console.log);
+  console.log('Fin)';
+  
+  // Outputs:
+
+  // Inicio
+  // Fin
+  // 1
+  // 2
+  // 3
+  // 4
+  // 5
+  `;
 }

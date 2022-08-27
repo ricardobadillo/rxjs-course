@@ -22,28 +22,13 @@ export class OfComponent {
 
   dataCard: DescriptionCard = {
     imageURL: 'assets/images/rxjs.png',
+    imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
     isList: false,
+    showDivider: true,
+    styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '400px' },
     text: 'Permite crear observables en base de un listado de elementos.',
     title: 'Of',
   } 
-
-  cardStyle = {
-    'margin-bottom': '1rem',
-    'padding-top': '2rem',
-    'width': '400px'
-  };
-
-  headerStyle = {
-    'font-size': '1.25rem',
-    'text-align': 'center'
-  };
-
-  imageStyle = {
-    'display': 'flex',
-    'height': '100px',
-    'margin': '0 auto',
-    'width': '100px'
-  };
 
   of_code: string = `
     import { of } from 'rxjs';
@@ -60,25 +45,4 @@ export class OfComponent {
     // Next: 20
     // Next: 30
   `
-
-  async_scheduler_code = `
-  import { range, asyncScheduler } from 'rxjs';
-import { DescriptionCard } from '../../../../core/models/description-card';
-
-  const source$ = range(1, 5, asyncScheduler);
-
-  console.log('Inicio');
-  source$.subscribe(console.log);
-  console.log('Fin)';
-  
-  // Outputs:
-
-  // Inicio
-  // Fin
-  // 1
-  // 2
-  // 3
-  // 4
-  // 5
-  `;
 }

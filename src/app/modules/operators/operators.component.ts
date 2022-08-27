@@ -12,11 +12,6 @@ export class OperatorsComponent {
     'width': '400px'
   };
 
-  headerStyle = {
-    'font-size': '1.25rem',
-    'text-align': 'center'
-  };
-
   imageStyle = {
     'display': 'flex',
     'height': '100px',

@@ -9,6 +9,7 @@ import { DescriptionCardComponent } from './components/description-card/descript
 import { DividerComponent } from './components/divider/divider.component';
 import { FieldsetComponent } from './components/fieldset/fieldset.component';
 import { ListComponent } from './components/list/list.component';
+import { TableComponent } from './components/table/table.component';
 
 // PrimeNG.
 import { ButtonModule } from 'primeng/button';
@@ -37,6 +38,7 @@ import 'prismjs/components/prism-scss';
     FieldsetComponent,
     ListComponent,
     FieldsetComponent,
+    TableComponent,
   ],
   imports: [
     CommonModule,
@@ -51,6 +53,7 @@ import 'prismjs/components/prism-scss';
     DividerComponent,
     FieldsetComponent,
     ListComponent,
+    TableComponent,
 
     ButtonModule,
     CardModule,

@@ -1,6 +1,8 @@
 export interface Card {
-    content: string;
-    styleClass: string;
-    styleImage: Object;
-    urlImage: string;
+    content:      string;
+    hasImage:     boolean;
+    styleCard:    string;
+    styleImage?:  Object;
+    title?:       string;
+    urlImage?:    string;
 }

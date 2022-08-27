@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RxjsComponent } from './rxjs.component';
 
 
+
 const routes: Routes = [
   { path: '', component: RxjsComponent }
 ];

@@ -1,4 +1,10 @@
+// Angular.
 import { Component } from '@angular/core';
+
+// Modelos.
+import { DescriptionCard } from 'src/app/core/models/description-card';
+
+
 
 @Component({
   selector: 'app-observers',
@@ -7,22 +13,21 @@ import { Component } from '@angular/core';
 })
 export class ObserversComponent {
 
-  cardStyle = {
-    'margin-bottom': '1rem',
-    'padding-top': '2rem',
-    'width': '400px'
-  };
+  dataCard: DescriptionCard = {
+    imageURL: 'assets/images/rxjs.png',
+    imageStyle: { 'display': 'flex', 'height': '100px', 'margin': '0 auto', 'width': '100px' },
+    isList: false,
+    showDivider: true,
+    styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '400px' },
+    text: `
+      Los observers son <span class="special">consumidores</span> de los valores entregados por un Observable.
+              
+      <br> <br>
 
-  headerStyle = {
-    'font-size': '1.25rem',
-    'text-align': 'center'
-  };
-
-  imageStyle = {
-    'display': 'flex',
-    'height': '100px',
-    'margin': '0 auto',
-    'width': '100px'
+      Los observers son solo objetos con tres devoluciones de llamada, una para cada tipo de 
+      notificación que un Observable puede entregar.
+    `,
+    title: '¿Qué son los Observers?',
   };
 
   observer_code: string = `

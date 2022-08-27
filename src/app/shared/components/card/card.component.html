@@ -1,7 +1,16 @@
-<p-card styleClass="card-content">
-    <ng-template pTemplate="header">
-        <img alt="Card" [src]="cardData.urlImage" [style]="cardData.styleImage">
-    </ng-template>
+<p-card [styleClass]="cardData.styleCard">
+    <ng-container [ngSwitch]="cardData.hasImage">
+        <ng-container *ngSwitchCase="true">
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="cardData.urlImage" [style]="cardData.styleImage">
+            </ng-template>
+        </ng-container>
+        <ng-container *ngSwitchCase="false">
+            <ng-template pTemplate="header">
+                {{ cardData.title }}
+            </ng-template>
+        </ng-container>
+    </ng-container>
 
     <p-divider></p-divider>
     

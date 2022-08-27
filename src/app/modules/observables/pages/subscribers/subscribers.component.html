@@ -33,19 +33,5 @@
         <span class="p-tag-special"> En resumen 😎 </span>
     </p-divider>
 
-    <p-card [style]="cardStyle">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
-        </ng-template>
-        <div class="title">
-            ¿Qué son los subscribers?
-        </div>
-        <p-divider></p-divider>
-        <ul>
-            <li> Se subscriben a un observable, es decir, están pendiente de lo que realiza el observable. </li>
-            <li> Consumen u observan la data del observable. </li>
-            <li> Pueden recibir los errores y eventos del observable. </li>
-            <li> Desconocen todo lo que se enceuntra detrás del observable. </li>
-        </ul>
-    </p-card>
+    <app-description-card style="margin-top: 2rem;" [dataCard]="cardData"></app-description-card>
 </div>

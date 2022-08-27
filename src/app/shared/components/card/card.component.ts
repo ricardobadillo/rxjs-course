@@ -1,5 +1,10 @@
+// Angular.
 import { Component, Input } from '@angular/core';
+
+// Modelos.
 import { Card } from '../../../core/models/card';
+
+
 
 @Component({
   selector: 'app-card',
@@ -8,7 +13,7 @@ import { Card } from '../../../core/models/card';
 })
 export class CardComponent {
 
-  @Input() cardData: Card = { content: '', styleClass: '', styleImage: '', urlImage: '' }
+  @Input() cardData: Card = { content: '', hasImage: false, styleCard: '', styleImage: '', urlImage: '' }
 
   constructor() { }
 }

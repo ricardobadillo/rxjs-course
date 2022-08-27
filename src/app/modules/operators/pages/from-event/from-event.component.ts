@@ -13,11 +13,6 @@ export class FromEventComponent {
     'width': '400px'
   };
 
-  headerStyle = {
-    'font-size': '1.25rem',
-    'text-align': 'center'
-  };
-
   imageStyle = {
     'display': 'flex',
     'height': '100px',
@@ -35,7 +30,7 @@ export class FromEventComponent {
   fromEvent_code: string = `
     import { fromEvent } from 'rxjs';
 
-    const source = fromEvent<MouseEvent>( document, 'click');
+    const source$ = fromEvent<MouseEvent>( document, 'click');
 
     // Un observer.
     const observer = { 
@@ -43,6 +38,6 @@ export class FromEventComponent {
     };
 
     // Se emite datos del evento click.
-    source.subscribe(observer);
+    source$.subscribe(observer);
   `
 }

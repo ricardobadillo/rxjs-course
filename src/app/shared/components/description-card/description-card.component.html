@@ -1,12 +1,12 @@
-<p-card [style]="cardStyle">
+<p-card [style]="dataCard.styleClass">
     <ng-template pTemplate="header">
-        <img alt="Card" src="{{dataCard.imageURL}}" [style]="imageCardStyle">
+        <img alt="Card" src="{{dataCard.imageURL}}" [style]="dataCard.imageStyle">
     </ng-template>
     <div class="title">
         {{ dataCard.title }}
     </div>
     
-    <p-divider></p-divider>
+    <p-divider *ngIf="dataCard.showDivider"></p-divider>
 
     <ng-container [ngSwitch]="dataCard.isList">
         <ng-container *ngSwitchCase="true">
@@ -16,14 +16,9 @@
         </ng-container>
 
         <ng-container *ngSwitchCase="false">
-            <p> 
-                {{ dataCard.text }}
-                
-                <span class="special" *ngIf="dataCard.resume">
-                    <br> <br>
-                    {{ dataCard.resume }} 
-                </span>
-            </p>
+            <ng-container *ngSwitchCase="false">
+                <p [innerHtml]="dataCard.text"></p>
+            </ng-container>
         </ng-container>
     </ng-container>
 </p-card>

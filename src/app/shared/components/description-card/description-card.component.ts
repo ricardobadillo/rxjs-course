@@ -1,5 +1,5 @@
 // Angular.
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 // Modelos.
 import { DescriptionCard } from 'src/app/core/models/description-card';
@@ -14,11 +14,8 @@ import { DescriptionCard } from 'src/app/core/models/description-card';
 export class DescriptionCardComponent {
 
   @Input() dataCard: DescriptionCard = { 
-    title: '', 
-    imageURL: '', 
-    isList: false,
-    resume: '',
-    text: ''
+    title: '',  imageURL: '',  isList: false,
+    showDivider: true, text: ''
   };
 
   cardStyle = { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '350px' };

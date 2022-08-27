@@ -1,8 +1,11 @@
 export interface DescriptionCard {
-    title:          string;
-    isList:         boolean;
     imageURL:       string;
+    imageStyle?:    string | Object;
+    isList:         boolean;
     listContent?:   string[];
-    text?:           string;
-    resume?:         string;
+    resume?:        string;
+    showDivider:    boolean;
+    styleClass?:    string | Object;
+    text?:          string;
+    title:          string;
 }
