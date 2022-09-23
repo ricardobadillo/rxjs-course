@@ -1,4 +1,7 @@
+// Angular.
 import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-subject',
@@ -35,7 +38,7 @@ export class SubjectComponent {
     
     const subscriptor = interval.subscribe(console.log);
     const other_subscriptor = interval.subscribe(console.log);
-  `
+  `;
 
   double_subscriber: string = `
     import { interval } from 'rxjs';

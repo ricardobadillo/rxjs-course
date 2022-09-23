@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Componentes.
-import { AsyncSchedulerComponent } from './pages/async-scheduler/async-scheduler.component';
-import { FromEventComponent } from './pages/from-event/from-event.component';
-import { IntervalComponent } from './pages/interval/interval.component';
-import { OfComponent } from './pages/of/of.component';
+import { AsyncSchedulerComponent } from '../observables/func/async-scheduler/async-scheduler.component';
+import { FromEventComponent } from '../observables/func/from-event/from-event.component';
+import { IntervalComponent } from '../observables/func/interval/interval.component';
+import { OfComponent } from '../observables/func/of/of.component';
 import { OperatorsComponent } from './operators.component';
-import { RangeComponent } from './pages/range/range.component';
-import { TimerComponent } from './pages/timer/timer.component';
+import { RangeComponent } from '../observables/func/range/range.component';
+import { TimerComponent } from '../observables/func/timer/timer.component';
 
 
 

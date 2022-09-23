@@ -12,20 +12,21 @@ import * as Prism from 'prismjs';
   styleUrls: ['./code-block.component.scss']
 })
 export class CodeBlockComponent implements AfterViewInit, OnChanges {
-  @ViewChild('codeEle') codeEle!: ElementRef;
+
+  @ViewChild('codeElement') codeElement!: ElementRef;
   @Input() code?: string;
   @Input() language?: string;
 
   constructor() { }
 
   ngAfterViewInit() {
-    Prism.highlightElement(this.codeEle.nativeElement);
+    Prism.highlightElement(this.codeElement.nativeElement);
   }
   ngOnChanges(changes: any): void {
     if (changes?.code) {
-      if (this.codeEle?.nativeElement) {
-        this.codeEle.nativeElement.textContent = this.code;
-        Prism.highlightElement(this.codeEle.nativeElement);
+      if (this.codeElement?.nativeElement) {
+        this.codeElement.nativeElement.textContent = this.code;
+        Prism.highlightElement(this.codeElement.nativeElement);
       }
     }
   }

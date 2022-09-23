@@ -5,4 +5,4 @@ export interface Card {
     styleImage?:  Object;
     title?:       string;
     urlImage?:    string;
-}
+};

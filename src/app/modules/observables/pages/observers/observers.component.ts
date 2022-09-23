@@ -43,7 +43,7 @@ export class ObserversComponent {
     complete: 
       () => console.log('Complete'),
   };
-  `
+  `;
 
   observer: string = `
     observable.subscribe(observer);

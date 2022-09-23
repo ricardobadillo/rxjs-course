@@ -1,6 +1,6 @@
 // Angular.
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 // Componentes.
 import { CardComponent } from './components/card/card.component';
@@ -37,14 +37,15 @@ import 'prismjs/components/prism-scss';
     DividerComponent,
     FieldsetComponent,
     ListComponent,
-    FieldsetComponent,
     TableComponent,
   ],
   imports: [
     CommonModule,
+    
     CardModule,
     DividerModule,
     FieldsetModule,
+    TableModule
   ],
   exports: [
     CardComponent,

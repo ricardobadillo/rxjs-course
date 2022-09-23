@@ -13,7 +13,13 @@ import { Card } from '../../../core/models/card';
 })
 export class CardComponent {
 
-  @Input() cardData: Card = { content: '', hasImage: false, styleCard: '', styleImage: '', urlImage: '' }
+  @Input() cardData: Card = { 
+    content: '', 
+    hasImage: false, 
+    styleCard: '', 
+    styleImage: '', 
+    urlImage: '' 
+  };
 
   constructor() { }
 }

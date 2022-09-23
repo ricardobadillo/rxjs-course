@@ -1,1 +1,14 @@
-<p>table works!</p>
+<p-table [value]="tableParameters" [responsiveLayout]="responsiveLayout">
+    <ng-template pTemplate="header">
+        <tr>
+            <th *ngFor="let item of columnNames"> {{ item }} </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-tableParameters>
+        <tr>
+            <td> {{ tableParameters.argument }} </td>
+            <td> {{ tableParameters.type }} </td>
+            <td> {{ tableParameters.description }} </td>
+        </tr>
+    </ng-template>
+</p-table>

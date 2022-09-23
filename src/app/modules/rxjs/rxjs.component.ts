@@ -91,11 +91,11 @@ export class RxjsComponent {
 
   constructor() { }
 
-  toggleRxJS() {
+  toggleRxJS(): void {
     this.showRxJS = !this.showRxJS;
-  }
+  };
 
-  toggleContentRxJS() {
+  toggleContentRxJS(): void {
     this.showContentRxJS = !this.showContentRxJS;
-  }
+  };
 }

@@ -1,4 +1,10 @@
+// Angular.
 import { Component } from '@angular/core';
+
+// Modelos.
+import { TableParameters } from 'src/app/core/models/table-parameters';
+
+
 
 @Component({
   selector: 'app-from-event',
@@ -20,7 +26,9 @@ export class FromEventComponent {
     'width': '100px'
   };
 
-  parameters = [
+  columnNames: string[] = ['Argumento', 'Tipo', 'Descripción'];
+
+  tableParameters: TableParameters[] = [
     { argument: 'target', type: 'any', description: 'El DOM EventTarget, Node.js EventEmitter, destino de evento similar a JQuery, NodeList o HTMLCollection para adjuntar el controlador de eventos.' },
     { argument: 'eventName', type: 'string', description: 'El nombre del evento de interés, emitido por el destino.' },
     { argument: 'options', type: 'EventListenerOptions | ((...args: any[]) => T)', description: 'Opcional. Por defecto es undefined. Opciones para pasar a addEventListener.' },

@@ -22,22 +22,9 @@
     </p-divider>
 
     <div class="container-table">
-        <p-table [value]="parameters" responsiveLayout="scroll">
-            <ng-template pTemplate="header">
-                <tr>
-                    <th> Argumento </th>
-                    <th> Tipo </th>
-                    <th> Descripción </th>
-                </tr>
-            </ng-template>
-            <ng-template pTemplate="body" let-parameter>
-                <tr>
-                    <td> {{ parameter.argument }} </td>
-                    <td> {{ parameter.type }} </td>
-                    <td> {{ parameter.description }} </td>
-                </tr>
-            </ng-template>
-        </p-table>
-        
+        <app-table
+            [columnNames]="columnNames"
+            [tableParameters]="tableParameters">
+        </app-table>
     </div>
 </div>

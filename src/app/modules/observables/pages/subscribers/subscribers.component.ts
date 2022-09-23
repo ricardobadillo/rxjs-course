@@ -21,12 +21,12 @@ export class SubscribersComponent {
       'Se subscriben a un observable, es decir, están pendiente de lo que realiza el observable.',
       'Consumen u observan la data del observable.',
       'Pueden recibir los errores y eventos del observable.',
-      'Desconocen todo lo que se enceuntra detrás del observable.'
+      'Desconocen todo lo que se encuentra detrás del observable.'
     ],
     styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '400px' },
     showDivider: true,
     title: '¿Qué son los subscribers?'
-  }
+  };
 
   dataCard: DescriptionCard = {
     imageURL: 'assets/images/rxjs.png',
@@ -80,11 +80,10 @@ export class SubscribersComponent {
           console.log('Intervalo acabado');
       }
   } );
-  `
+  `;
 
   double_subscriber: string = `
     import { interval } from 'rxjs';
-import { DescriptionCard } from '../../../../core/models/description-card';
   
     const observable = interval(100);
     const other_observable = interval(200);
