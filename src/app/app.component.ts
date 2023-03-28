@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 
 // PrimeNg.
-import { MenuItem } from 'primeng/api';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
 
 
 @Component({
@@ -11,14 +11,18 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
+  menuItemContent!: MenuItem[]; // Menú del contenido temático.
+  menuItemMain!: MenuItem[]; // Menú principal.
+  showMenu: boolean = false; // Condicional para mostrar el menú de contenido.
 
-  showMenu: boolean = false;
-
-  title!: MenuItem[];
-  items!: MenuItem[];
+  
+  constructor(private primengConfig: PrimeNGConfig) {
+    this.primengConfig.ripple = true;
+  }
 
   ngOnInit() {
-    this.title = [
+    this.menuItemMain = [
       {
         label: 'Menú',
         icon: 'pi pi-chevron-down',
@@ -26,7 +30,7 @@ export class AppComponent {
       }
     ];
   
-    this.items = [
+    this.menuItemContent = [
       {
         label: 'Programación Reactiva',
         icon:'pi pi-star',
@@ -128,7 +132,7 @@ export class AppComponent {
     ];
   }
 
-  closeMenu() {
+  closeMenu(): void {
     this.showMenu = false;
   }
 }

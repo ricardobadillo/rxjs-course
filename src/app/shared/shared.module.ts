@@ -6,7 +6,6 @@ import { NgModule } from '@angular/core';
 import { CardComponent } from './components/card/card.component';
 import { CodeBlockComponent } from './components/code-block/code-block.component';
 import { DescriptionCardComponent } from './components/description-card/description-card.component';
-import { DividerComponent } from './components/divider/divider.component';
 import { FieldsetComponent } from './components/fieldset/fieldset.component';
 import { ListComponent } from './components/list/list.component';
 import { TableComponent } from './components/table/table.component';
@@ -34,7 +33,6 @@ import 'prismjs/components/prism-scss';
     CardComponent,
     CodeBlockComponent,
     DescriptionCardComponent,
-    DividerComponent,
     FieldsetComponent,
     ListComponent,
     TableComponent,
@@ -51,7 +49,6 @@ import 'prismjs/components/prism-scss';
     CardComponent,
     CodeBlockComponent,
     DescriptionCardComponent,
-    DividerComponent,
     FieldsetComponent,
     ListComponent,
     TableComponent,

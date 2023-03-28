@@ -2,9 +2,10 @@
     <ng-container [ngSwitch]="cardData.hasImage">
         <ng-container *ngSwitchCase="true">
             <ng-template pTemplate="header">
-                <img alt="Card" [src]="cardData.urlImage" [style]="cardData.styleImage">
+                <img [src]="cardData.urlImage" [style]="cardData.styleImage" alt="Card">
             </ng-template>
         </ng-container>
+
         <ng-container *ngSwitchCase="false">
             <ng-template pTemplate="header">
                 {{ cardData.title }}
@@ -13,6 +14,6 @@
     </ng-container>
 
     <p-divider></p-divider>
-    
+
     <p [innerHtml]="cardData.content"></p>
 </p-card>

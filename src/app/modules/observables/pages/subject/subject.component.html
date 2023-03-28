@@ -8,7 +8,11 @@
                 ¿Qué son los Subject?
             </div>
             <p-divider></p-divider>
+
             Es un tipo especial de Observable que permite la multidifusión de valores a muchos observers.
+            
+            <br> <br>
+
             Mientras que los Observables simples son de unifusión, es decir, cada observer suscrito
             posee una ejecución independiente del Observable, los Subject son de multidifusión.
 
@@ -23,13 +27,16 @@
     </div>
 
     <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special">Hablemos de sus características 🤓</span>
+        <span class="p-tag-special"> Hablemos de sus características 🤓 </span>
     </p-divider>
 
     <div>
         <p> 
-            ❗ Casteo múltiple: Muchas subscripciones están sujetas a este mismo Subject. Va a servir para distribuir la misma información a todos los 
-            lugares que estén suscritos. 
+            ❗ Casteo múltiple: Muchas subscripciones están sujetas a este mismo Subject. 
+            
+            <br> <br>
+            
+            <span [style.marginLeft.rem]="1.5"> Va a servir para distribuir la misma información a todos los lugares que estén suscritos. </span>
         </p>
 
         <p>
@@ -42,15 +49,15 @@
     </div>
 
     <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special">Suscripciones aninadas 🤔</span>
+        <span class="p-tag-special"> Más sobre los Subject 🤔 </span>
     </p-divider>
 
     <div class="code-full">
-        <app-code-block [code]="double_subscriber" language="js"></app-code-block>
+        <app-code-block [code]="subject_code_v2" language="js"></app-code-block>
     </div>
 
     <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special">Algo más... 😒</span>
+        <span class="p-tag-special"> Algo más... 😒 </span>
     </p-divider>
 
     <div>
@@ -62,6 +69,10 @@
         <p>
             ❗ Cuando la data es producida fuera del observable es llamado
             <span class="special">Hot Observable.</span>
+        </p>
+
+        <p>
+            🧠 Por lo tanto, un Subject nos permite transformar un Cold Observable en un Hot Observable.
         </p>
     </div>
 </div>

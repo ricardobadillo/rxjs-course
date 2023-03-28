@@ -26,7 +26,7 @@ export class RxjsComponent {
   reactiveNotesData: FieldSet[] = [
     {
       classStyle: 'definition-container',
-      content: 'La programación reactiva es un paradigma de programación asincrónico interesado en <span class="special">los flujos de datos</span> y <span class="special">la propagación al cambio</span>. Es decir, <span class="special italic">reaccionar</span> a los datos ejecutando una serie de eventos.',
+      content: 'La programación reactiva es un paradigma de programación asíncrona interesado en <span class="special">los flujos de datos</span> y <span class="special">la propagación al cambio</span>. Es decir, <span class="special italic">reaccionar</span> a los datos ejecutando una serie de eventos.',
       legend: '¿Qué es la programación reactiva?',
       styleClass: 'definition-container'
     },
@@ -86,9 +86,10 @@ export class RxjsComponent {
     },
   ];
 
-  showContentRxJS: boolean = false;
-  showRxJS: boolean = false;
+  showContentRxJS: boolean = true;
+  showRxJS: boolean = true;
 
+  
   constructor() { }
 
   toggleRxJS(): void {

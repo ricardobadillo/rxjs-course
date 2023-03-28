@@ -1,9 +1,9 @@
-<p-menubar [model]="title" [style]="{'border-radius': '0'}">
+<p-menubar [model]="menuItemMain" [style]="{'border-radius': '0', 'font-weight': '600'}" >
     RxJS Course App
 </p-menubar>
 
 <div class="container">
-    <p-panelMenu *ngIf="showMenu" [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
+    <p-panelMenu *ngIf="showMenu" [model]="menuItemContent" [style]="{'width': '250px'}"></p-panelMenu>
     <router-outlet></router-outlet>
 </div>
 

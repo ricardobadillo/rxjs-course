@@ -22,7 +22,7 @@
     </div>
 
     <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special">Suscripciones aninadas 🤔</span>
+        <span class="p-tag-special"> Suscripciones aninadas 🤔 </span>
     </p-divider>
 
     <div class="code-full">
@@ -30,8 +30,44 @@
     </div>
 
     <p-divider align="left" styleClass="divider">
+        <p-button [style]="{ 'padding': '0.5rem 1rem' }" icon="pi pi-code" label="Concepto asociado a suscripciones anidadas" (onClick)="toggleTeardown()"></p-button>
+    </p-divider>
+    
+    <div class="container" *ngIf="showTeardown">
+        <app-fieldset [fieldSetData]="tearDownData"></app-fieldset>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
         <span class="p-tag-special"> En resumen 😎 </span>
     </p-divider>
 
-    <app-description-card style="margin-top: 2rem;" [dataCard]="cardData"></app-description-card>
+    <div>
+        <p> 
+            ❗ Un Observer es un objeto que sabe cómo recibir y manejar notificaciones emitidas por un Observable.,
+        </p>
+
+        <p>
+            👀 Un Observer puede tener hasta tres métodos: <span [style.fontStyle]="'italic'"> next, error y complete. </span>
+        </p>
+
+        <p>
+            🤔 Un Subscriber, por otro lado, es un objeto que combina un Observer con una suscripción a un Observable.
+        </p>
+
+        <p>
+            🧠 Un Observer cuenta con estos tres métodos, pero también con un método unsubscribe, que permite cancelar la suscripción al observable.
+        </p>
+
+        <p>
+            🤔 Por tanto, un Subscriber es un Observer que puede cancelar la suscripción al observable.
+        </p>
+
+        <p>
+            💡 Los Subscriber son comúnmente utilizados para suscribirse a un observable y comenzar a recibir notificaciones.
+        </p>
+
+        <p>
+            💡 Los Observer pueden ser utilizados para realizar cualquier operación que requiera escuchar notificaciones de un observable.
+        </p>
+    </div>
 </div>

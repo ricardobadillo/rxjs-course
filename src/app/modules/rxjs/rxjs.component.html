@@ -11,7 +11,7 @@
 </div>
 
 <p-divider align="left" styleClass="divider">
-    <p-button label="¿Qué es RxJS?" icon="pi pi-code" (onClick)="toggleRxJS()"></p-button>
+    <p-button [style]="{ 'padding': '0.5rem 1rem' }" icon="pi pi-code" label="¿Qué es RxJS?" (onClick)="toggleRxJS()"></p-button>
 </p-divider>
 
 <div class="container" *ngIf="showRxJS">
@@ -24,10 +24,10 @@
 </div>
 
 <p-divider align="left" styleClass="divider">
-    <p-button label="¿Qué significa todo eso?" icon="pi pi-code" (onClick)="toggleContentRxJS()"></p-button>
+    <p-button [style]="{ 'padding': '0.5rem 1rem' }" icon="pi pi-code" label="¿Qué significa todo eso?" (onClick)="toggleContentRxJS()"></p-button>
 </p-divider>
 
-<div class="container" *ngIf="showContentRxJS" style="flex-wrap: wrap;">
+<div class="container-cards" *ngIf="showContentRxJS">
     <ng-container *ngFor="let card of descriptionCards">
         <app-description-card [dataCard]="card"></app-description-card>
     </ng-container>

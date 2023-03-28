@@ -17,11 +17,13 @@ export class CodeBlockComponent implements AfterViewInit, OnChanges {
   @Input() code?: string;
   @Input() language?: string;
 
+  
   constructor() { }
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     Prism.highlightElement(this.codeElement.nativeElement);
   }
+  
   ngOnChanges(changes: any): void {
     if (changes?.code) {
       if (this.codeElement?.nativeElement) {

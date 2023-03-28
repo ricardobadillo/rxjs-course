@@ -6,10 +6,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'rxjs',
-    loadChildren: () => import('./modules/rxjs/rxjs.module').then(m => m.RxjsModule)
-  },
-  {
     path: 'observables',
     loadChildren: () => import('./modules/observables/observables.module').then(m => m.ObservablesModule)
   },
@@ -17,11 +13,15 @@ const routes: Routes = [
     path: 'operators',
     loadChildren: () => import('./modules/operators/operators.module').then(m => m.OperatorsModule)
   },
+  {
+    path: 'rxjs',
+    loadChildren: () => import('./modules/rxjs/rxjs.module').then(m => m.RxjsModule)
+  },
   { path: '', redirectTo: 'rxjs', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule { }

@@ -1,6 +1,6 @@
 <p-card [style]="dataCard.styleClass">
     <ng-template pTemplate="header">
-        <img alt="Card" src="{{dataCard.imageURL}}" [style]="dataCard.imageStyle">
+        <img [src]="dataCard.imageURL" [style]="dataCard.imageStyle" alt="Card">
     </ng-template>
     <div class="title">
         {{ dataCard.title }}

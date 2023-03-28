@@ -1,7 +1,7 @@
 .container {
     display: flex;
-    margin: 3rem;
-    justify-content: space-around;
+    margin: 3rem 1rem 0rem;
+    justify-content: space-between;
 }
 
 .content-fieldset {
@@ -10,5 +10,16 @@
     
     > * {
         margin-bottom: 1rem;
+    }
+}
+
+.container-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

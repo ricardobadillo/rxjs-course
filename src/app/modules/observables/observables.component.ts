@@ -39,7 +39,7 @@ export class ObservablesComponent {
   import { Observable } from 'rxjs';
 
   // Esto es un observable que emite valores de tipo string.
-  const observable = new Observable<string>(subscriber => {
+    const observable$ = new Observable<string>(subscriber => {
   // Emite el primer valor.
     subscriber.next('Hola.');
 
@@ -54,7 +54,7 @@ export class ObservablesComponent {
   });
 
   // Aquí se observan los valores emitidos.
-    observable.subscribe(console.log);
+    observable$.subscribe(console.log);
   `;
   
   constructor() { }

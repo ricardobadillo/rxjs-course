@@ -24,40 +24,39 @@ export class SubjectComponent {
   };
 
   subject_code: string = `
-    import { Observable } from 'rxjs';
+    import { Observable, Subject } from 'rxjs';
 
-    const interval = new Observable(subscriber => {
+    const interval$ = new Observable(subscriber => {
       const intervalID = setInterval(
-        () => subscriber.next( Math.random() ), 1000);
+        () => subscriber.next(Math.random()), 1000);
 
-      return () => clearInterval( intervalID );
+      return () => clearInterval(intervalID);
     });
   
     // Se imprime los valores emitidos para los dos suscriptores.
     // Y son los mismos para ambos 👀.
     
-    const subscriptor = interval.subscribe(console.log);
-    const other_subscriptor = interval.subscribe(console.log);
+    const subscriptor = interval$.subscribe(console.log);
+    const otherSubscriptor = interval$.subscribe(console.log);
   `;
 
-  double_subscriber: string = `
-    import { interval } from 'rxjs';
-  
-    const observable = interval(100);
-    const other_observable = interval(200);
-    
-    const subscription = observable
-      .subscribe(respuesta => console.log('Respuesta: ', respuesta));
+  subject_code_v2: string = `
+    import { Observable, Subject } from 'rxjs';
 
-    const other_subscription = other_observable
-      .subscribe(respuesta => console.log('Respuesta: ' + respuesta));
-    
-    subscription.add(other_subscription);
-    
-    setTimeout(() => {
+    const interval$ = new Observable(subscriber => {
+      const intervalID = setInterval(
+        () => subscriber.next(Math.random()), 1000);
 
-      // Se cancelan ambas suscripciones ⚡.
-      subscription.unsubscribe();
-    }, 1000);
+      return () => clearInterval(intervalID);
+    });
+
+    // Se imprime los valores emitidos para los dos suscriptores.
+    // Y ahora son diferentes 👀.
+    
+    const subject$ = new Subject();
+    interval$.subscribe(subject$);
+
+    const subscriptor = subject$.subscribe(console.log);
+    const otherSubscriptor = subject$.subscribe(console.log);
   `;
 }
