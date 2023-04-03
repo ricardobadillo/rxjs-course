@@ -71,21 +71,39 @@ export class AppComponent {
             icon: 'pi pi-plus',
             items: [
               {
-                label: 'Of',
+                label: 'asyncScheduler',
                 icon:'pi pi-bolt',
-                routerLink: 'operators/of',
+                routerLink: 'observables/functions/async-scheduler',
+                command: () => this.closeMenu()
+              },
+              {
+                label: 'from',
+                icon:'pi pi-bolt',
+                routerLink: 'observables/functions/from',
                 command: () => this.closeMenu()
               },
               {
                 label: 'fromEvent',
                 icon:'pi pi-bolt',
-                routerLink: 'operators/fromEvent',
+                routerLink: 'observables/functions/from-event',
+                command: () => this.closeMenu()
+              },
+              {
+                label: 'interval',
+                icon:'pi pi-bolt',
+                routerLink: 'observables/functions/interval',
                 command: () => this.closeMenu()
               },
               {
                 label: 'range',
                 icon:'pi pi-bolt',
-                routerLink: 'operators/range',
+                routerLink: 'observables/functions/range',
+                command: () => this.closeMenu()
+              },
+              {
+                label: 'timer',
+                icon:'pi pi-bolt',
+                routerLink: 'observables/functions/timer',
                 command: () => this.closeMenu()
               },
             ]
@@ -98,33 +116,33 @@ export class AppComponent {
         routerLink: 'operators',
         items: [
           {
-            label: 'map',
-            icon:'pi pi-bolt',
-            routerLink: 'operators/of',
-            command: () => this.closeMenu()
-          },
-          {
-            label: 'pluck',
-            icon:'pi pi-bolt',
-            routerLink: 'operators/fromEvent',
-            command: () => this.closeMenu()
-          },
-          {
-            label: 'mapTo',
-            icon:'pi pi-bolt',
-            routerLink: 'operators/range',
-            command: () => this.closeMenu()
-          },
-          {
             label: 'filter',
             icon:'pi pi-bolt',
-            routerLink: 'operators/range',
+            routerLink: 'operators/filter',
+            command: () => this.closeMenu()
+          },
+          {
+            label: 'map',
+            icon:'pi pi-bolt',
+            routerLink: 'operators/map',
+            command: () => this.closeMenu()
+          },
+          {
+            label: 'reduce',
+            icon:'pi pi-bolt',
+            routerLink: 'operators/reduce',
+            command: () => this.closeMenu()
+          },
+          {
+            label: 'scan',
+            icon:'pi pi-bolt',
+            routerLink: 'operators/scan',
             command: () => this.closeMenu()
           },
           {
             label: 'tap',
             icon:'pi pi-bolt',
-            routerLink: 'operators/range',
+            routerLink: 'operators/tap',
             command: () => this.closeMenu()
           },
         ]

@@ -1,1 +1,17 @@
-<p>timer works!</p>
+<div class="container">
+    <div class="card-container">
+        <app-description-card [dataCard]="dataCard"></app-description-card>
+                
+        <div class="code">
+            <app-code-block [code]="timer_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Otra configuración ✍🏻 </span>
+    </p-divider>
+
+    <div class="code">
+        <app-code-block [code]="timer_code_v2" language="js"></app-code-block>
+    </div>
+</div>

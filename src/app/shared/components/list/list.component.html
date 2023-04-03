@@ -1,3 +1,3 @@
 <div class="list">
-    <p *ngFor="let item of listContent" class="item-list"> {{ item }} </p>
+    <p *ngFor="let item of listContent" class="item-list" [innerHtml]="item"></p>
 </div>

@@ -1,1 +1,15 @@
-<p>interval works!</p>
+<div class="container">
+    <div class="card-container">
+        <app-description-card [dataCard]="dataCard"></app-description-card>
+                
+        <div class="code">
+            <app-code-block [code]="interval_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Detalles ✍🏻 </span>
+    </p-divider>
+
+    <app-list [listContent]="listContent"></app-list>
+</div>

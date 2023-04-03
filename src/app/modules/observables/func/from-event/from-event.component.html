@@ -5,26 +5,16 @@
             <ng-template pTemplate="header">
                 <img alt="Card" src="assets/images/rxjs.png" [style]="imageStyle">
             </ng-template>
-            <div class="title">
-                fromEvent
-            </div>
+
+            <div class="title"> fromEvent </div>
+
             <p-divider></p-divider>
+
             Permite crear observables en base a un event target.
         </p-card>
         
         <div class="code">
             <app-code-block [code]="fromEvent_code" language="js"></app-code-block>
         </div>
-    </div>
-
-    <p-divider align="left" styleClass="divider">
-        <span class="p-tag-special"> Parámetros 🎯 </span>
-    </p-divider>
-
-    <div class="container-table">
-        <app-table
-            [columnNames]="columnNames"
-            [tableParameters]="tableParameters">
-        </app-table>
     </div>
 </div>

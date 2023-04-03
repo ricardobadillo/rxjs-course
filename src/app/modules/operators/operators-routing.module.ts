@@ -3,28 +3,26 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Componentes.
-import { AsyncSchedulerComponent } from '../observables/func/async-scheduler/async-scheduler.component';
-import { FromEventComponent } from '../observables/func/from-event/from-event.component';
-import { IntervalComponent } from '../observables/func/interval/interval.component';
-import { OfComponent } from '../observables/func/of/of.component';
+import { FilterComponent } from './pages/filter/filter.component';
+import { MapComponent } from './pages/map/map.component';
 import { OperatorsComponent } from './operators.component';
-import { RangeComponent } from '../observables/func/range/range.component';
-import { TimerComponent } from '../observables/func/timer/timer.component';
+import { ReduceComponent } from './pages/reduce/reduce.component';
+import { ScanComponent } from './pages/scan/scan.component';
+import { TapComponent } from './pages/tap/tap.component';
 
 
 
 const routes: Routes = [
   { path: '', component: OperatorsComponent },
-  { path: 'async-scheduler', component: AsyncSchedulerComponent },
-  { path: 'fromEvent', component: FromEventComponent },
-  { path: 'interval', component: IntervalComponent },
-  { path: 'of', component: OfComponent },
-  { path: 'range', component: RangeComponent },
-  { path: 'timer', component: TimerComponent },
+  { path: 'filter', component: FilterComponent },
+  { path: 'map', component: MapComponent },
+  { path: 'reduce', component: ReduceComponent },
+  { path: 'scan', component: ScanComponent },
+  { path: 'tap', component: TapComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  imports: [ RouterModule.forChild(routes) ],
+  exports: [ RouterModule ]
 })
 export class OperatorsRoutingModule { }

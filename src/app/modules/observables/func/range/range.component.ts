@@ -1,4 +1,7 @@
+// Angular.
 import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-range',
@@ -8,14 +11,14 @@ import { Component } from '@angular/core';
 export class RangeComponent {
 
   listContent: string[] = [
-    '❗ Es síncrono.',
-    '❗ Un observable de números que emite un rango finito de enteros secuenciales.',
-    '❗ El operador de rango emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud.',
-    `❗ El operador de rango emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud. 
+    '💡 Es síncrono.',
+    '💡 Es un Observable de números que emite un rango finito de enteros secuenciales.',
+    '💡 Range emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud.',
+    `💡 Range emite un rango de enteros secuenciales, en orden, donde selecciona el inicio del rango y su longitud. 
     De manera predeterminada, no usa <span class="special">SchedulerLike</span> y solo entrega las notificaciones de forma sincrónica.
     Puede usar un SchedulerLike opcional para regular esas entregas.`,
     '👀 Por defecto tiene como valor inicial el 0.',
-    '❗ Se puede transformar de manera asíncrona con un Async Scheduler.',
+    '🧠 Se puede transformar de manera asíncrona con un Async Scheduler.',
   ]
 
   cardStyle = {
@@ -55,23 +58,23 @@ export class RangeComponent {
   `
 
   async_scheduler_code = `
-  import { range, asyncScheduler } from 'rxjs';
-import { DescriptionCard } from '../../../../core/models/description-card';
+    import { range, asyncScheduler } from 'rxjs';
+    import { DescriptionCard } from '../../../../core/models/description-card';
 
-  const source$ = range(1, 5, asyncScheduler);
+    const source$ = range(1, 5, asyncScheduler);
 
-  console.log('Inicio');
-  source$.subscribe(console.log);
-  console.log('Fin)';
-  
-  // Outputs:
+    console.log('Inicio');
+    source$.subscribe(console.log);
+    console.log('Fin)';
+    
+    // Outputs:
 
-  // Inicio
-  // Fin
-  // 1
-  // 2
-  // 3
-  // 4
-  // 5
+    // Inicio
+    // Fin
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
   `;
 }

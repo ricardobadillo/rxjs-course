@@ -9,6 +9,6 @@ export class ListComponent {
 
   @Input() listContent: string[] = [];
 
+  
   constructor() { }
-
 }
