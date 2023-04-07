@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="card-container">
+        <app-description-card [dataCard]="dataCard"></app-description-card>
+                
+        <div class="code">
+            <app-code-block [code]="merge_all_code" language="js"></app-code-block>
+        </div>
+    </div>
+
+    <p-divider align="left" styleClass="divider">
+        <span class="p-tag-special"> Área de práctica 💪 </span>
+    </p-divider>
+
+    <div class="practice-container">
+        <div class="input-practice">
+            <label for="integeronly"> Buscar </label>
+            <input type="text" #input pInputText inputId="integeronly" [(ngModel)]="value" />    
+        </div>
+
+        <div class="output-practice">
+            <p class="result"> Resultado: </p>
+            <p> Buscar por: {{ value }} </p>
+            <div>
+                <button *ngFor="let item of results" pButton [style.cursor]="'pointer'" [style.padding.rem]="0.5" [style.marginBottom.rem]="1" (click)="goToPage(item.html_url)">
+                    {{ item.url }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 3rem;
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.code {
+    margin: 0rem 2rem;
+    width: 650px;
+}
+
+.p-tag-special {
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: .75rem;
+}

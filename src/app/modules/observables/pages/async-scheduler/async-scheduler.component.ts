@@ -26,7 +26,7 @@ export class AsyncSchedulerComponent {
     showDivider: true,
     styleClass: { 'margin-bottom': '1rem', 'padding-top': '2rem', 'width': '400px' },
     text: 'Permite crear observables en base de un listado de elementos.',
-    title: 'Of',
+    title: 'Async Scheduler',
   } 
 
   of_code: string = `

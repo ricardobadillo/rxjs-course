@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 3rem;
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.code {
+    margin: 0rem 2rem;
+    width: 650px;
+}
+
+.p-tag-special {
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: .75rem;
+}
+
+.practice-container {
+    border: 3px solid var(--primary);
+    border-radius: 9px;
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 2rem 1rem;
+
+    .input-practice, .output-practice {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 1rem;
+    }
+
+    label {
+        font-family: "Arial";
+        font-weight: 600;
+        margin: 0rem 0rem 1rem;
+    }
+    
+    li {
+        font-family: "Arial";
+    }
+    
+    .result {
+        font-weight: 600;
+        margin: 0rem 0rem 1rem;
+    }
+
+}

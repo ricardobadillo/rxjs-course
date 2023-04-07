@@ -10,6 +10,7 @@ import { RxjsRoutingModule } from './rxjs-routing.module';
 import { SharedModule } from '../../shared/shared.module';
 
 
+
 @NgModule({
   declarations: [
     RxjsComponent
