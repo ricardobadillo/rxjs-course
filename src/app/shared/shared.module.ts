@@ -15,7 +15,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { FieldsetModule } from 'primeng/fieldset';
-import { ImageModule } from 'primeng/image'; 
+import { ImageModule } from 'primeng/image';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { TableModule } from 'primeng/table';
@@ -23,8 +23,8 @@ import { TooltipModule } from 'primeng/tooltip';
 
 // Prismjs.
 import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-yaml';
 import 'prismjs/components/prism-scss';
+import 'prismjs/components/prism-yaml';
 
 
 
@@ -39,11 +39,11 @@ import 'prismjs/components/prism-scss';
   ],
   imports: [
     CommonModule,
-    
+
     CardModule,
     DividerModule,
     FieldsetModule,
-    TableModule
+    TableModule,
   ],
   exports: [
     CardComponent,
