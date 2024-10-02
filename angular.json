@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "documentation-rxjs:build:production"
+              "buildTarget": "documentation-rxjs:build:production"
             },
             "development": {
-              "browserTarget": "documentation-rxjs:build:development"
+              "buildTarget": "documentation-rxjs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "documentation-rxjs:build"
+            "buildTarget": "documentation-rxjs:build"
           }
         },
         "test": {
